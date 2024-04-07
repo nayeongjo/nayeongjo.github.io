@@ -9,9 +9,10 @@ let list = [];
 function addList(evt) {
   evt.preventDefault();
 
-  const date = new Date();
+  if (toDoInput.value === "") return;
+
   const format = {
-    id: date,
+    id: Date.now(),
     content: toDoInput.value,
   };
 
@@ -28,18 +29,22 @@ function saveList() {
 
 function deleteList(evt) {
   const li = evt.target.parentElement;
-  list = list.filter((items) => items.id !== li.id);
-  li.remove();
+  list = list.filter((items) => items.id !== parseInt(li.id));
+  console.log(list);
   saveList();
+  li.remove();
 }
 
 function showData(item) {
   const li = document.createElement("li");
   li.id = item.id;
+  li.style.display = "flex";
+  li.style.justifyContent = "space-between";
   const span = document.createElement("span");
   span.innerText = item.content;
   const i = document.createElement("i");
   i.className = "fa-solid fa-trash";
+  i.style.justifyContent = "left";
   i.addEventListener("click", deleteList);
   li.appendChild(span);
   li.appendChild(i);

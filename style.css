@@ -42,6 +42,7 @@ body{
   height: 300px;
 }
 .todoArea {
+  width: 312px;
   min-width: 100px;
   min-height: 100px;
   margin-left: 60px;
