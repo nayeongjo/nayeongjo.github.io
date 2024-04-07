@@ -1,12 +1,43 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="kr">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/3013beb43b.js" crossorigin="anonymous"></script>
 </head>
 <body>
-  <h1>test</h1>
+  <div class="content">
+    <div class="loginArea">
+      <div class="clock">00:00:00</div>
+
+      <div id="loading">날씨 찾는 중...</div>
+      <div id="weather">
+        <span></span>
+        <span></span>
+      </div>
+      <form class="login_form"><input type="text" placeholder="Login ID" /></form>
+      <p id="loginResult" class="hide"></p>
+    </div>
+    
+    <span class="line"></span>
+    
+    <div class="todoArea">
+      <form class="toDo_form"><input type="text" placeholder="write your toDo" /></form>
+        <ul class="showToDo">
+          <li>
+            test
+            <i class="fa-solid fa-trash"></i>
+          </li>
+        </ul>
+    </div>
+  </div>
+  <script src="js/img.js"></script>
+  <script src="js/clock.js"></script>
+  <script src="js/weather.js"></script>
+  <script src="js/login.js"></script>
+  <script src="js/todo.js"></script>
 </body>
 </html>

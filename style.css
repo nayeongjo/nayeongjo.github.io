@@ -1,0 +1,71 @@
+body{
+  width: 100%;
+  height: 100%;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -60%);
+
+  display: flex;
+  background-color: rgba(256, 256, 256, 0.5);
+  border-radius: 30px;
+  padding:60px;
+}
+
+.loginArea {
+  min-width:100px;
+  min-height: 100px;
+  margin-right: 60px;
+  text-align: center;
+}
+
+#loginResult{
+  width: 312px;
+  text-align: center;
+}
+.hide{
+  display: none;
+}
+
+.loginArea .clock{
+  font-size: 70px;
+}
+
+.login_form{
+  margin-top:20px;
+}
+.line {
+  border-right: solid #444444 1px;
+  height: 300px;
+}
+.todoArea {
+  min-width: 100px;
+  min-height: 100px;
+  margin-left: 60px;
+}
+.showToDo {
+  padding-left: 30px;
+} 
+
+input {
+  font-size: 15px;
+  color: #222222;
+  width: 300px;
+  border: none;
+  border-bottom: solid #222222 1px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  position: relative;
+  background: none;
+  z-index: 5;
+  margin: 10px 0px;
+}
+input::placeholder {
+  color: #222222;
+}
+input:focus {
+  outline: none;
+}
