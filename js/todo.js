@@ -38,13 +38,10 @@ function deleteList(evt) {
 function showData(item) {
   const li = document.createElement("li");
   li.id = item.id;
-  li.style.display = "flex";
-  li.style.justifyContent = "space-between";
   const span = document.createElement("span");
   span.innerText = item.content;
   const i = document.createElement("i");
   i.className = "fa-solid fa-trash";
-  i.style.justifyContent = "left";
   i.addEventListener("click", deleteList);
   li.appendChild(span);
   li.appendChild(i);

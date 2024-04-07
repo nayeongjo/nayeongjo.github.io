@@ -48,8 +48,18 @@ body{
   margin-left: 60px;
 }
 .showToDo {
-  padding-left: 30px;
+  padding-left: 10px;
 } 
+
+li {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 10px;
+  margin-top:5px;
+  margin-bottom: 5px;
+  list-style: none;
+  /* padding-left: 10px; */
+}
 
 input {
   font-size: 15px;
